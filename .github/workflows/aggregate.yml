@@ -1,6 +1,8 @@
 # Based off of <https://mozilla.github.io/cargo-vet/multiple-repositories.html>
 name: CI
 on:
+  push:
+  pull_request:
   schedule:
     # Every hour
     - cron:  '0 * * * *'
@@ -31,7 +33,9 @@ jobs:
       run: |
         git config --global user.name "cargo-vet[bot]"
         git config --global user.email "cargo-vet-aggregate@invalid"
+        git config --global --add safe.directory '*'
         git add audits.toml
         git commit -m "Aggregate new audits" || true
-    - name: Push changes (if any)
+    - name: Push changes (if any) for scheduled runs
+      if: github.event.schedule
       run: git push origin main
