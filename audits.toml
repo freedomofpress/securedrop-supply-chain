@@ -911,6 +911,14 @@ end = "2024-04-10"
 notes = "Sequoia developer"
 aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
 
+[[trusted.sequoia-openpgp]]
+criteria = "safe-to-deploy"
+user-id = 33711
+start = "2019-03-14"
+end = "2024-12-12"
+notes = "Sequoia developer"
+aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
+
 [[trusted.serde]]
 criteria = "safe-to-deploy"
 user-id = 3618
