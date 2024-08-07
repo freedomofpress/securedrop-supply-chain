@@ -739,6 +739,14 @@ aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/d
 criteria = "safe-to-deploy"
 user-id = 163
 start = "2023-03-24"
+end = "2025-01-22"
+notes = "Rust Project member"
+aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
+
+[[trusted.openssl]]
+criteria = "safe-to-deploy"
+user-id = 163
+start = "2023-03-24"
 end = "2024-08-12"
 notes = "Rust Project member"
 aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop-client/main/supply-chain/audits.toml"
@@ -756,6 +764,14 @@ criteria = "safe-to-deploy"
 user-id = 163
 start = "2023-03-24"
 end = "2024-05-29"
+notes = "Rust Project member"
+aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
+
+[[trusted.openssl-sys]]
+criteria = "safe-to-deploy"
+user-id = 163
+start = "2023-03-24"
+end = "2025-01-22"
 notes = "Rust Project member"
 aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
 
