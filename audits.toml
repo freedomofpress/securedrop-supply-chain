@@ -204,6 +204,18 @@ criteria = "safe-to-run"
 delta = "0.32.1 -> 0.32.2"
 aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop-client/main/supply-chain/audits.toml"
 
+[[audits.openssl]]
+who = "Cory Francis Myers <cory@freedom.press>"
+criteria = "safe-to-run"
+delta = "0.10.68 -> 0.10.70"
+aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
+
+[[audits.openssl-sys]]
+who = "Cory Francis Myers <cory@freedom.press>"
+criteria = "safe-to-run"
+delta = "0.9.104 -> 0.9.105"
+aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
+
 [[audits.petgraph]]
 who = "Kunal Mehta <legoktm@debian.org>"
 criteria = "safe-to-run"
