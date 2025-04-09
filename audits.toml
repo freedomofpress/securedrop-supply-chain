@@ -166,6 +166,12 @@ criteria = "safe-to-run"
 version = "0.6.5"
 aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
 
+[[audits.memoffset]]
+who = "Kunal Mehta <legoktm@debian.org>"
+criteria = "safe-to-run"
+delta = "0.9.0 -> 0.9.1"
+aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
+
 [[audits.memsec]]
 who = "Kunal Mehta <legoktm@debian.org>"
 criteria = "safe-to-run"
@@ -930,6 +936,14 @@ notes = "Rust Project member"
 aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
 
 [[trusted.openssl]]
+criteria = "safe-to-deploy"
+user-id = 163
+start = "2023-03-24"
+end = "2025-10-09"
+notes = "Rust Project member"
+aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
+
+[[trusted.openssl]]
 criteria = "safe-to-run"
 user-id = 163
 start = "2023-03-24"
@@ -965,6 +979,14 @@ criteria = "safe-to-deploy"
 user-id = 163
 start = "2023-03-24"
 end = "2025-01-22"
+notes = "Rust Project member"
+aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
+
+[[trusted.openssl-sys]]
+criteria = "safe-to-deploy"
+user-id = 163
+start = "2023-03-24"
+end = "2025-10-09"
 notes = "Rust Project member"
 aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
 
@@ -1007,6 +1029,14 @@ end = "2024-11-17"
 notes = "Rust Project member"
 aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop-client/main/supply-chain/audits.toml"
 
+[[trusted.portable-atomic]]
+criteria = "safe-to-deploy"
+user-id = 33035
+start = "2022-02-24"
+end = "2025-10-09"
+notes = "Rust Project member"
+aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
+
 [[trusted.prettyplease]]
 criteria = "safe-to-deploy"
 user-id = 3618
@@ -1030,6 +1060,46 @@ start = "2019-04-23"
 end = "2024-08-12"
 notes = "Rust Project member"
 aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop-client/main/supply-chain/audits.toml"
+
+[[trusted.pyo3]]
+criteria = "safe-to-run"
+user-id = 6622
+start = "2020-09-12"
+end = "2025-10-09"
+notes = "per https://github.com/freedomofpress/securedrop-engineering/issues/112"
+aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
+
+[[trusted.pyo3-build-config]]
+criteria = "safe-to-deploy"
+user-id = 6622
+start = "2021-05-25"
+end = "2025-10-09"
+notes = "per https://github.com/freedomofpress/securedrop-engineering/issues/112"
+aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
+
+[[trusted.pyo3-ffi]]
+criteria = "safe-to-deploy"
+user-id = 6622
+start = "2022-02-27"
+end = "2025-10-09"
+notes = "per https://github.com/freedomofpress/securedrop-engineering/issues/112"
+aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
+
+[[trusted.pyo3-macros]]
+criteria = "safe-to-deploy"
+user-id = 6622
+start = "2020-12-20"
+end = "2025-10-09"
+notes = "per https://github.com/freedomofpress/securedrop-engineering/issues/112"
+aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
+
+[[trusted.pyo3-macros-backend]]
+criteria = "safe-to-deploy"
+user-id = 6622
+start = "2020-12-20"
+end = "2025-10-09"
+notes = "per https://github.com/freedomofpress/securedrop-engineering/issues/112"
+aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
 
 [[trusted.quote]]
 criteria = "safe-to-deploy"
@@ -1236,6 +1306,14 @@ criteria = "safe-to-deploy"
 user-id = 6825
 start = "2019-03-06"
 end = "2024-04-10"
+notes = "Rust Project member"
+aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
+
+[[trusted.target-lexicon]]
+criteria = "safe-to-deploy"
+user-id = 6825
+start = "2019-03-06"
+end = "2025-10-09"
 notes = "Rust Project member"
 aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
 
