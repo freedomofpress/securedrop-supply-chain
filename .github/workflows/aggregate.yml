@@ -24,7 +24,11 @@ jobs:
           app-id: ${{ vars.FPF_BRANCH_UPDATER_APP_ID }}
           private-key: ${{ secrets.FPF_BRANCH_UPDATER_APP_PRIVKEY }}
 
-      - uses: actions/checkout@master
+      - name: Checkout repository
+        uses: actions/checkout@main
+        with:
+          token: ${{ steps.app-token.outputs.token }}
+          persist-credentials: false
 
       - uses: actions/cache@v4
         id: cache-vet
