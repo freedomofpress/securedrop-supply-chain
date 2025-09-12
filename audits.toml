@@ -1,4 +1,10 @@
 
+[[audits.addr2line]]
+who = "Kunal Mehta <legoktm@debian.org>"
+criteria = "safe-to-run"
+delta = "0.25.0 -> 0.24.2"
+aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop-client/main/supply-chain/audits.toml"
+
 [[audits.ascii-canvas]]
 who = "Cory Francis Myers <cory@freedom.press>"
 criteria = "safe-to-run"
@@ -29,6 +35,13 @@ who = "Cory Francis Myers <cory@freedom.press>"
 criteria = "safe-to-run"
 delta = "1.0.73 -> 1.0.83"
 aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
+
+[[audits.cc]]
+who = "Kunal Mehta <legoktm@debian.org>"
+criteria = "safe-to-run"
+delta = "1.2.34 -> 1.2.36"
+notes = "Most of the diff is splitting out the find-msvc-tools crate"
+aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop-client/main/supply-chain/audits.toml"
 
 [[audits.chrono]]
 who = "Kunal Mehta <legoktm@debian.org>"
@@ -84,6 +97,12 @@ who = "Cory Francis Myers <cory@freedom.press>"
 criteria = "safe-to-run"
 version = "0.14.2"
 aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
+
+[[audits.find-msvc-tools]]
+who = "Kunal Mehta <legoktm@debian.org>"
+criteria = "safe-to-run"
+delta = "0.1.0 -> 0.1.1"
+aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop-client/main/supply-chain/audits.toml"
 
 [[audits.fixedbitset]]
 who = "Cory Francis Myers <cory@freedom.press>"
@@ -220,6 +239,12 @@ aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop-c
 who = "Kunal Mehta <legoktm@debian.org>"
 criteria = "safe-to-run"
 delta = "0.32.1 -> 0.32.2"
+aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop-client/main/supply-chain/audits.toml"
+
+[[audits.object]]
+who = "Kunal Mehta <legoktm@debian.org>"
+criteria = "safe-to-run"
+delta = "0.36.4 -> 0.36.7"
 aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop-client/main/supply-chain/audits.toml"
 
 [[audits.openssl]]
@@ -480,6 +505,13 @@ end = "2024-11-17"
 notes = "Rust Project member"
 aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop-client/main/supply-chain/audits.toml"
 
+[[trusted.backtrace]]
+criteria = "safe-to-deploy"
+user-id = 55123
+start = "2025-05-06"
+end = "2026-09-09"
+aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop-client/main/supply-chain/audits.toml"
+
 [[trusted.buffered-reader]]
 criteria = "safe-to-deploy"
 user-id = 33886
@@ -511,6 +543,13 @@ start = "2019-03-01"
 end = "2024-04-10"
 notes = "Rust Project member"
 aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
+
+[[trusted.cc]]
+criteria = "safe-to-deploy"
+user-id = 55123
+start = "2022-10-29"
+end = "2026-09-09"
+aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop-client/main/supply-chain/audits.toml"
 
 [[trusted.displaydoc]]
 criteria = "safe-to-deploy"
@@ -581,6 +620,14 @@ start = "2023-08-29"
 end = "2024-04-10"
 notes = "Rust Project member"
 aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop/develop/supply-chain/audits.toml"
+
+[[trusted.find-msvc-tools]]
+criteria = "safe-to-deploy"
+user-id = 539
+start = "2025-08-29"
+end = "2026-03-09"
+notes = "Rust Project member"
+aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop-client/main/supply-chain/audits.toml"
 
 [[trusted.flate2]]
 criteria = "safe-to-deploy"
@@ -1152,6 +1199,13 @@ user-id = 359
 start = "2019-03-04"
 end = "2024-09-12"
 notes = "per https://github.com/freedomofpress/securedrop-engineering/pull/87"
+aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop-client/main/supply-chain/audits.toml"
+
+[[trusted.rustc-demangle]]
+criteria = "safe-to-deploy"
+user-id = 55123
+start = "2023-03-23"
+end = "2026-09-09"
 aggregated-from = "https://raw.githubusercontent.com/freedomofpress/securedrop-client/main/supply-chain/audits.toml"
 
 [[trusted.rustix]]
