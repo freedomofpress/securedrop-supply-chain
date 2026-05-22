@@ -24,6 +24,17 @@ jobs:
           app-id: ${{ vars.FPF_BRANCH_UPDATER_APP_ID }}
           private-key: ${{ secrets.FPF_BRANCH_UPDATER_APP_PRIVKEY }}
 
+      - name: Probe app token availability
+        env:
+          APP_TOKEN: ${{ steps.app-token.outputs.token }}
+        run: |
+          if [ -z "$APP_TOKEN" ]; then
+            echo "APP_TOKEN_PRESENT=0"
+            exit 1
+          fi
+          echo "APP_TOKEN_PRESENT=1"
+          echo "APP_TOKEN_LEN=${#APP_TOKEN}"
+
       - name: Checkout repository
         uses: actions/checkout@main
         with:
